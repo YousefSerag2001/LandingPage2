@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\login.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("oFl9NYx221a2DiFZ5");
+   })();
+</script>
+  </head>
+  <body>
+    
+    <section class="wrapper animate__zoomOutDown">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#" novalidate onsubmit="return formvalidate()" >
+          <input type="text" placeholder="Full name" id="fullname" required />
+          <input type="text" placeholder="Email address" id="email" required />
+          <input type="password" placeholder="Password" id="pass" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <H3 id="error"></H3>
+
+          <input type="submit" value="Signup" id="mom" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="index.html">
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="login">
+        </form>
+        <i class="fa-solid fa-moon" id="toggleDark"></i>
+        <h5>DarkMood</h5>
+      </div>
+      <script src="lib/wow/wow.min.js"></script>
+    <script src="js\login.js"></script>
+    </section>
+  </body>
+</html>
+
